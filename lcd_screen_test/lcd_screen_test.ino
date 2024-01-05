@@ -3,6 +3,7 @@
 
 // initialize the library by associating any needed LCD interface pin
 // with the arduino pin number it is connected to
+// bonjour 
 const int rs = 8, en = 7, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
@@ -54,7 +55,7 @@ void loop() {
     
     if (str3 == str1) {
       Serial.print("\nYAY");
-      lcd.print(" Yay");
+      lcd.print(" Yay!!!!!");
       //servo_A1.attach(A1, 500, 2500);
       //servo_A0.write(90);
       //servo_A1.write(90);
