@@ -7,20 +7,21 @@
 const int rs = 8, en = 7, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
-const byte ROWS = 3;
-const byte COLS = 3;
+const byte ROWS = 4;
+const byte COLS = 4;
 String str1 = "124";
 String str3;
 int len;
 
 char keys[ROWS][COLS] = {
-  {'1','2','3'},
-  {'4','5','6'},
-  {'7','8','9'}
+  {'1','2','3','A'},
+  {'4','5','6','B'},
+  {'7','8','9','C'},
+  {'*','0','#','D'}
 };
     
-byte rowPins[ROWS] = {22, 23, 24};
-byte colPins[COLS] = {25, 26, 27};
+byte rowPins[ROWS] = {22, 23, 24, 25};
+byte colPins[COLS] = {26, 27, 28, 29};
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
